@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>35</x>
+      <y>35</y>
+      <w>133</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Pitching Motor
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>49</x>
+      <y>203</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>TIP122 Current Regulator
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>91</x>
+      <y>77</y>
+      <w>66</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Motor
+V+
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>77</y>
+      <w>66</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Motor
+V-
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;126;35;21</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>35</y>
+      <w>98</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Pager Motor
+w/ TIP122
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>35</y>
+      <w>112</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Ball Flow Regulator
+(Servo and Lift-Gate)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>189</y>
+      <w>140</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>UNO Stack
+
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>77</y>
+      <w>100</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>Servo Control
+lt=&lt;-</panel_attributes>
+    <additional_attributes>56;21;56;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>315</x>
+      <y>77</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>5V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>217</x>
+      <y>77</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>98</x>
+      <y>231</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>9V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>42</x>
+      <y>231</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>126</x>
+      <y>182</y>
+      <w>167</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Pitching Enable
+lt=-&gt;</panel_attributes>
+    <additional_attributes>154;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>259</x>
+      <y>77</y>
+      <w>63</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>Pager
+Enable
+
+lt=&lt;-</panel_attributes>
+    <additional_attributes>35;21;35;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>203</x>
+      <y>77</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>9V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>329</x>
+      <y>77</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+</diagram>

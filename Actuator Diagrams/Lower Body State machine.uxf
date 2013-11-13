@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>168</y>
+      <w>182</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Init
+--
+entry/ Spin up pitching motor
+/Ensure turret is at 0 deg
+/Ensure peripherals are inited.
+/start spinning clockwise
+/initialize ball deflector
+exit/ Record CurrentOdometry
+as known bearing to enemy gate.
+bg=</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InitialState</type>
+    <coordinates>
+      <x>77</x>
+      <y>189</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>70</x>
+      <y>175</y>
+      <w>76</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>63;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>84</x>
+      <y>14</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Lower Body State Machine
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>294</x>
+      <y>161</y>
+      <w>209</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Beacon Detected 0b11 || 0b00</panel_attributes>
+    <additional_attributes>196;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>413</x>
+      <y>224</y>
+      <w>125</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+No Obstacles</panel_attributes>
+    <additional_attributes>77;21;49;21;49;56;112;56;112;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>462</x>
+      <y>245</y>
+      <w>142</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+CDAR Packet Received</panel_attributes>
+    <additional_attributes>77;98;77;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>588</x>
+      <y>224</y>
+      <w>130</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Bearing Adjustment
+Complete</panel_attributes>
+    <additional_attributes>42;21;70;21;70;147;28;147</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>609</x>
+      <y>161</y>
+      <w>195</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Bearing Timer
+Expired</panel_attributes>
+    <additional_attributes>182;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>609</x>
+      <y>189</y>
+      <w>195</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Bearing Adjustment
+Complete</panel_attributes>
+    <additional_attributes>21;35;182;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>476</x>
+      <y>91</y>
+      <w>146</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Any Tape Sensor Event</panel_attributes>
+    <additional_attributes>77;21;77;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>623</x>
+      <y>35</y>
+      <w>244</w>
+      <h>146</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>231;133;231;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.StateSubDiagram</type>
+    <coordinates>
+      <x>791</x>
+      <y>168</y>
+      <w>140</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Check Odometry
+--
+entry/ none
+exit/none
+Check current odometry
+and make sure that the
+bot's bearing isn't
+something ridiculous,
+adjust if it is, and it isn't
+trying to seek between
+obstacles.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.StateSubDiagram</type>
+    <coordinates>
+      <x>483</x>
+      <y>343</y>
+      <w>133</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>New CDAR Packet
+--
+entry / PacketHandler
+Adjust bearing to go
+between objects.  Check
+to make sure approx.
+equidistance between
+obstacles.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.StateSubDiagram</type>
+    <coordinates>
+      <x>462</x>
+      <y>14</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Tape Sensor Handler
+--
+entry / turn away from tape sensor
+
+Use current odometry to
+caluclate the proper
+trejectory to the goal
+based off of current
+readings and the initial
+bearing.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>490</x>
+      <y>168</y>
+      <w>140</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Seeking
+--
+entry / All forward.
+/ start bearingcheck timer</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

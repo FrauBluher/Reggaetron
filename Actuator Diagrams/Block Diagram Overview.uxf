@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>400</y>
+      <w>176</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Ball Launcher
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>272</x>
+      <y>104</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Motor Drive and Odometry
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>400</y>
+      <w>160</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Turret Position Control
+
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>144</y>
+      <w>144</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Beacon Detector1
+(Enemy racking)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>96</y>
+      <w>384</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>Turret
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>232</y>
+      <w>144</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Beacon Detector3
+(Valid Target Sensor)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>144</y>
+      <w>144</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Beacon Detector2
+(Enemy Tracking
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>416</x>
+      <y>288</y>
+      <w>274</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Detect</panel_attributes>
+    <additional_attributes>24;48;240;48;240;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>416</x>
+      <y>200</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Detect</panel_attributes>
+    <additional_attributes>24;64;176;64;176;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>416</x>
+      <y>200</y>
+      <w>450</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Detect</panel_attributes>
+    <additional_attributes>24;160;416;160;416;24</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>256</y>
+      <w>160</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>UNO Stack
+
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>400</x>
+      <y>368</y>
+      <w>192</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+Motor Control Signals</panel_attributes>
+    <additional_attributes>24;24;24;104;176;104;176;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>264</x>
+      <y>368</y>
+      <w>552</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Ball Launcher Signals</panel_attributes>
+    <additional_attributes>24;24;24;136;536;136;536;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>152</y>
+      <w>236</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+Motor Drive and Odometry Signals</panel_attributes>
+    <additional_attributes>120;104;120;24</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>48</x>
+      <y>104</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Sensors
+(Line Detector and CDAR)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>88</x>
+      <y>152</y>
+      <w>208</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+Tape Sensors Digital I/O
+and CDAR Serial Stream</panel_attributes>
+    <additional_attributes>48;24;48;176;136;176;192;176</additional_attributes>
+  </element>
+</diagram>

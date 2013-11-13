@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>70</y>
+      <w>203</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Roomba Wheel
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>35</x>
+      <y>238</y>
+      <w>161</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Encoder Logic (Pull up resistor network)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>140</x>
+      <y>112</y>
+      <w>74</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Orange
+IR +v
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;21;42;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>105</x>
+      <y>112</y>
+      <w>62</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Grey
+IR -V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;126;35;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>56</x>
+      <y>112</y>
+      <w>78</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Black
+Photo -V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;21;42;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>7</x>
+      <y>112</y>
+      <w>82</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Blue
+Photo +v
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;126;42;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>196</x>
+      <y>49</y>
+      <w>146</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Motor1 V+ (R)
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>133;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>196</x>
+      <y>77</y>
+      <w>146</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Motor1 V- (Y)
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>133;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>70</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>DRV8814
+
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>70</y>
+      <w>203</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Roomba Wheel
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>238</y>
+      <w>161</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Encoder Logic (Pull up resistor network)
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>707</x>
+      <y>112</y>
+      <w>74</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Orange
+IR +v
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;21;42;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>672</x>
+      <y>112</y>
+      <w>62</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Grey
+IR -V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;126;35;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>623</x>
+      <y>112</y>
+      <w>78</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Black
+Photo -V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;21;42;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>574</x>
+      <y>112</y>
+      <w>82</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>Blue
+Photo +v
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>42;126;42;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>448</x>
+      <y>77</y>
+      <w>146</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Motor2 V- (Y)
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>133;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>448</x>
+      <y>49</y>
+      <w>146</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Motor2 V+ (R)
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>133;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>385</x>
+      <y>0</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>9V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>224</y>
+      <w>140</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>UNO Stack
+
+
+elementstyle=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>448</x>
+      <y>217</y>
+      <w>167</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Odometry Signal 1
+lt=-&gt;</panel_attributes>
+    <additional_attributes>154;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>700</x>
+      <y>266</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>9V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>658</x>
+      <y>266</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>98</x>
+      <y>266</y>
+      <w>52</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>9V
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>28;21;28;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>63</x>
+      <y>266</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>175</x>
+      <y>217</y>
+      <w>167</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Odometry Signal 2
+lt=&lt;-</panel_attributes>
+    <additional_attributes>154;35;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>112</y>
+      <w>62</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>Mtr 1
+Dir
+
+lt=&lt;-</panel_attributes>
+    <additional_attributes>35;21;35;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>420</x>
+      <y>112</y>
+      <w>62</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>Mtr 2
+Dir
+lt=&lt;-</panel_attributes>
+    <additional_attributes>35;21;35;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>343</x>
+      <y>112</y>
+      <w>64</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>EN_A
+lt=&lt;-</panel_attributes>
+    <additional_attributes>35;21;35;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>385</x>
+      <y>112</y>
+      <w>62</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>EN_B
+lt=&lt;-</panel_attributes>
+    <additional_attributes>35;21;35;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>0</y>
+      <w>60</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>GND
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>35;21;35;70</additional_attributes>
+  </element>
+</diagram>
