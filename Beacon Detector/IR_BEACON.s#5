@@ -5973,9 +5973,9 @@ Source: www.kingbright.com</description>
 <part name="JP2" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="JP3" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="JP4" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
-<part name="C7" library="ASL" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C7" library="ASL" deviceset="CAP" device="PTH3" value=".1uF"/>
 <part name="U1" library="ASL" deviceset="LP2950" device="ACZ" technology="-3.0"/>
-<part name="C8" library="ASL" deviceset="CAP" device="0805" value="2.2uF"/>
+<part name="C8" library="ASL" deviceset="CAP" device="PTH3" value="2.2uF"/>
 <part name="U$1" library="DRV83x2Support" deviceset="MCP6024-X/ST" device=""/>
 <part name="R20" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R21" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -5985,7 +5985,7 @@ Source: www.kingbright.com</description>
 <part name="GND7" library="ASL" deviceset="GND" device=""/>
 <part name="R22" library="ASL" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="GND8" library="ASL" deviceset="GND" device=""/>
-<part name="C10" library="ASL" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C10" library="ASL" deviceset="CAP" device="PTH3" value="100nF"/>
 <part name="R23" library="ASL" deviceset="RESISTOR" device="0805-RES" value="4.7k"/>
 <part name="J4" library="ASL" deviceset="M02" device="LOCK"/>
 <part name="R24" library="ASL" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
@@ -5995,6 +5995,7 @@ Source: www.kingbright.com</description>
 <part name="D3" library="diode" deviceset="1N4148" device="DO35-7"/>
 <part name="R3" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="D4" library="diode" deviceset="1N4148" device="DO35-7"/>
+<part name="C1" library="ASL" deviceset="CAP" device="PTH3" value="10uF"/>
 <part name="R5" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND1" library="ASL" deviceset="GND" device=""/>
 <part name="GND2" library="ASL" deviceset="GND" device=""/>
@@ -6005,7 +6006,6 @@ Source: www.kingbright.com</description>
 <part name="LED2" library="led" deviceset="LED" device="5MM"/>
 <part name="R28" library="ASL" deviceset="RESISTOR" device="0805-RES" value="330"/>
 <part name="C2" library="ASL" deviceset="CAP_POL" device="PTH2"/>
-<part name="C1" library="ASL" deviceset="CAP_POL" device="PTH2"/>
 </parts>
 <sheets>
 <sheet>
@@ -6082,6 +6082,7 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="319.278" y="120.65" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="D4" gate="G$1" x="312.42" y="124.46" rot="R90"/>
+<instance part="C1" gate="G$1" x="314.96" y="149.86" rot="R270"/>
 <instance part="R5" gate="G$1" x="317.5" y="157.48" smashed="yes">
 <attribute name="NAME" x="311.15" y="153.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="318.77" y="154.178" size="1.778" layer="96"/>
@@ -6110,7 +6111,6 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="316.23" y="74.422" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C2" gate="G$1" x="208.28" y="111.76"/>
-<instance part="C1" gate="G$1" x="314.96" y="149.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6195,6 +6195,11 @@ Source: www.kingbright.com</description>
 <wire x1="213.36" y1="58.42" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="149.86" x2="322.58" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
@@ -6207,11 +6212,6 @@ Source: www.kingbright.com</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="309.88" y1="86.36" x2="309.88" y2="88.9" width="0" layer="91"/>
 <label x="312.42" y="91.44" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="-"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="322.58" y1="149.86" x2="320.04" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BIAS" class="0">
@@ -6425,6 +6425,7 @@ Source: www.kingbright.com</description>
 <net name="V_ENV1" class="0">
 <segment>
 <wire x1="312.42" y1="132.08" x2="312.42" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="312.42" y1="149.86" x2="312.42" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="157.48" x2="312.42" y2="165.1" width="0.1524" layer="91"/>
@@ -6432,8 +6433,6 @@ Source: www.kingbright.com</description>
 <wire x1="353.06" y1="165.1" x2="353.06" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="A" pin="VINC-"/>
 <wire x1="353.06" y1="106.68" x2="312.42" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<junction x="312.42" y="149.86"/>
 </segment>
 </net>
 <net name="VINC+" class="0">
