@@ -4722,7 +4722,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="J2" library="ASL" deviceset="M02" device="LOCK"/>
 <part name="JP5" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="JP3" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
-<part name="JP4" library="ASL" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="C7" library="ASL" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="U1" library="ASL" deviceset="LP2950" device="ACZ" technology="-3.0"/>
 <part name="C8" library="ASL" deviceset="CAP" device="0805" value="2.2uF"/>
@@ -4793,7 +4792,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="J2" gate="G$1" x="35.56" y="165.1" rot="R270"/>
 <instance part="JP5" gate="G$1" x="20.32" y="162.56"/>
 <instance part="JP3" gate="G$1" x="27.94" y="162.56"/>
-<instance part="JP4" gate="G$1" x="30.48" y="162.56"/>
 <instance part="C7" gate="G$1" x="55.88" y="154.94"/>
 <instance part="U1" gate="G$1" x="63.5" y="134.62"/>
 <instance part="C8" gate="G$1" x="71.12" y="129.54"/>
@@ -5062,18 +5060,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="V_OUT" class="0">
-<segment>
-<label x="307.34" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="314.96" y1="68.58" x2="309.88" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="48.26" x2="314.96" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<junction x="309.88" y="68.58"/>
-</segment>
-</net>
 <net name="V_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -5193,6 +5179,16 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="154.94" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <label x="38.1" y="147.32" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<label x="307.34" y="68.58" size="1.778" layer="95" rot="R180"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="68.58" x2="309.88" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="48.26" x2="314.96" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<junction x="309.88" y="68.58"/>
 </segment>
 </net>
 <net name="N$5" class="0">
